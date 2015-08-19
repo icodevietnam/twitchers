@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/twitcher.iml" filepath="$PROJECT_DIR$/twitcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twitchers.iml" filepath="$PROJECT_DIR$/twitchers.iml" />
     </modules>
   </component>
 </project>
