@@ -19,7 +19,11 @@
 
 package com.coursework.app;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import org.apache.cordova.*;
 
 public class MainActivity extends CordovaActivity
@@ -29,6 +33,33 @@ public class MainActivity extends CordovaActivity
     {
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
+        //loadUrl(launchUrl);
+        setContentView(R.layout.activity_main);
+        Button btnBirdPage = (Button)this.findViewById(R.id.btnBirdPage);
+        Button btnManageBirdPage = (Button)this.findViewById(R.id.btnManageBirdPage);
+        //Button btnCourseWork3 = (Button)this.findViewById(R.id.btnCourseWork3);
+        btnBirdPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,AddBirdActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnManageBirdPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ListBirdActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        /*btnCourseWork3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ListEventActivity.class);
+                startActivity(intent);
+            }
+        });*/
     }
 }

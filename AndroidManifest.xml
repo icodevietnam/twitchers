@@ -45,8 +45,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MyListActivity"
-            android:label="@string/title_activity_my_list" >
+            android:name=".AddBirdActivity"
+            android:label="@string/title_activity_add_bird" >
+        </activity>
+        <activity
+            android:name=".ListBirdActivity"
+            android:label="@string/title_activity_list_bird" >
+        </activity>
+        <activity
+            android:name=".ViewActivity"
+            android:label="@string/title_activity_view" >
+        </activity>
+        <activity
+            android:name=".ListEventActivity"
+            android:label="@string/title_activity_list_event" >
+        </activity>
+        <activity
+            android:name=".AddReportActivity"
+            android:label="@string/title_activity_add_report" >
+        </activity>
+        <activity
+            android:name=".ViewReportActivity"
+            android:label="@string/title_activity_view_report" >
         </activity>
     </application>
 

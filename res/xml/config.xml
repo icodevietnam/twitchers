@@ -33,4 +33,7 @@
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
     </feature>
+    <feature name="CustomPlugin">
+        <param name="android-package" value="com.coursework.app.CustomPlugin" />
+    </feature>
 </widget>
